@@ -14,3 +14,6 @@ with sample_path.open("r", encoding="utf-8") as file:
         line_count += 1
 
 print("Total lines:", line_count)
+
+sample_path.unlink(missing_ok=True)
+print("Temporary sample file removed.")
